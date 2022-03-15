@@ -4,7 +4,7 @@ import urllib3
 import orionsdk
 urllib3.disable_warnings()
 
-swis = orionsdk.SwisClient('192.168.25.30', 'aj_api', 'SolGod369!!!',verify=False)
+swis = orionsdk.SwisClient('hostname', 'username', 'password',verify=False)
 def main():
     
     ip_query = swis.query("select ipaddress FROM orion.nodes") 
